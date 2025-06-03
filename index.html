@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://chat.whatsapp.com/Db2qc5V6ramIhAMh3eLcIC">
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0">
   <script>
     const grupos = [
       "https://chat.whatsapp.com/Db2qc5V6ramIhAMh3eLcIC", // Grupo 1
@@ -11,13 +11,19 @@
       "https://chat.whatsapp.com/F5aseU7zMQV0Gts0vJVfdg", // Grupo 4
       "https://chat.whatsapp.com/FQh4L4AEkTR0LpZO3d6YQ5"  // Grupo 5
     ];
+
+    // Tomamos el minuto actual del sistema (0 a 59)
     const minuto = new Date().getMinutes();
-    const index = Math.floor(minuto / 12);
+
+    // Calculamos el grupo correspondiente con rotación
+    const index = minuto % grupos.length;
+
+    // Redireccionamos automáticamente al grupo según el minuto
     window.location.href = grupos[index];
   </script>
   <title>Redireccionando...</title>
 </head>
 <body>
-  <p>Redireccionando al grupo correspondiente...</p>
+  <p>Redireccionando automáticamente...</p>
 </body>
 </html>
