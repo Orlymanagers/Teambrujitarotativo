@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=https://chat.whatsapp.com/Db2qc5V6ramIhAMh3eLcIC">
+  <script>
+    const grupos = [
+      "https://chat.whatsapp.com/Db2qc5V6ramIhAMh3eLcIC", // Grupo 1
+      "https://chat.whatsapp.com/L5zV6VchBNw81znhybnupn", // Grupo 2
+      "https://chat.whatsapp.com/JHzsDdDe1nDIi81vzRCYm8", // Grupo 3
+      "https://chat.whatsapp.com/F5aseU7zMQV0Gts0vJVfdg", // Grupo 4
+      "https://chat.whatsapp.com/FQh4L4AEkTR0LpZO3d6YQ5"  // Grupo 5
+    ];
+
+    const minuto = new Date().getMinutes();
+    const index = Math.floor(minuto / 12);
+    window.location.href = grupos[index];
+  </script>
+  <title>Redireccionando...</title>
+</head>
+<body>
+  <p>Redireccionando al grupo correspondiente...</p>
+</body>
+</html>
